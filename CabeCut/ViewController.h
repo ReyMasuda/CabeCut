@@ -12,6 +12,7 @@
     int number;
     IBOutlet UILabel *label;
     
+    
 }
 
 -(IBAction)cabeButton;
