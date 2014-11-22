@@ -12,63 +12,28 @@
 
 @end
 
-@implementation ViewController : UIViewController{
-}
+@implementation ViewController : UIViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     number = 10;
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    cut = 1;
+    reloadbt.hidden = YES;
 }
 
 -(IBAction)cabeButton{
     number=number -1;
+    cut = cut+1;
     label.text = [NSString stringWithFormat:@"%d",number];
-    if (number=number -1) {
-        UIImage *image1 = [UIImage imageNamed:@"cabe1"];
+    NSString *imagePath =[NSString stringWithFormat:@"cabe%d.png",cut];
+    cabeView.image=[UIImage imageNamed:imagePath];
+    if (number ==0) {
+        hiddenbt.hidden = YES;
     }
     
-    if (number=number -1) {
-        UIImage *image2 = [UIImage imageNamed:@"cabe2"];
-    }
-    
-    if (number=number -1) {
-        UIImage *image3 = [UIImage imageNamed:@"cabe3"];
-    }
-    
-    if (number=number -1) {
-        UIImage *image4 = [UIImage imageNamed:@"cabe4"];
-    }
-    
-    if (number=number -1) {
-        UIImage *image5 = [UIImage imageNamed:@"cabe5"];
-    }
-    
-    if (number=number -1) {
-        UIImage *image6 = [UIImage imageNamed:@"cabe6"];
-    }
-    
-    if (number=number -1) {
-        UIImage *image7 = [UIImage imageNamed:@"cabe7"];
-    }
-    
-    if (number=number -1) {
-        UIImage *image8 = [UIImage imageNamed:@"cabe8"];
-    }
-    
-    if (number=number -1) {
-        UIImage *image9 = [UIImage imageNamed:@"cabe9"];
-    }
-    
-    if (number=number -1) {
-        UIImage *image10 = [UIImage imageNamed:@"cabe10"];
+    if (number == 0) {
+        reloadbt.hidden = NO;
     }
     
 }
@@ -76,7 +41,12 @@
 -(IBAction)ReloadButton{
     number=10;
     label.text = [NSString stringWithFormat:@"%d",number];
-    
+    cabeView.image=[UIImage imageNamed:@"cabe1.png"];
+    cut = 1;
+    hiddenbt.hidden = NO;
+    if (number ==10) {
+        reloadbt.hidden = YES;
+    }
 }
 
 

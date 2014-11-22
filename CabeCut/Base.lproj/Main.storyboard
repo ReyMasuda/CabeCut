@@ -70,7 +70,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="cabeView" destination="08o-ri-ciQ" id="3bS-0o-6i1"/>
+                        <outlet property="hiddenbt" destination="6Qu-kD-Ff7" id="dBg-yN-2xb"/>
                         <outlet property="label" destination="NZT-Ms-r28" id="le3-KA-tMC"/>
+                        <outlet property="reloadbt" destination="IUU-PJ-nzy" id="bSi-K6-QdG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
