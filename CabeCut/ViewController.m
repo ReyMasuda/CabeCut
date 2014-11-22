@@ -18,6 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    number = 10;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -29,11 +30,15 @@
 
 -(IBAction)cabeButton{
     number=number -1;
-    label.text = [NSString stringWithFormat:@"%d"];
+    label.text = [NSString stringWithFormat:@"%d",number];
+    
 }
 
 -(IBAction)ReloadButton{
-    
+    number=10;
+    label.text = [NSString stringWithFormat:@"%d",number];
 }
+
+
 
 @end

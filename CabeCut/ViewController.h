@@ -12,10 +12,10 @@
     int number;
     IBOutlet UILabel *label;
     
-    
 }
 
 -(IBAction)cabeButton;
 -(IBAction)ReloadButton;
+
 
 @end
