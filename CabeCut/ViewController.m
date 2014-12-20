@@ -20,6 +20,11 @@
     number = 10;
     cut = 1;
     reloadbt.hidden = YES;
+    
+    //効果音ファイル読み込み
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"katana" ofType:@"mp3"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(url), &sound_1);
 }
 
 -(IBAction)cabeButton{
@@ -35,6 +40,8 @@
     if (number == 0) {
         reloadbt.hidden = NO;
     }
+    
+     AudioServicesPlaySystemSound(sound_1);
     
 }
 

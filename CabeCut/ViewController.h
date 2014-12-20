@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface ViewController : UIViewController{
     int number;
@@ -15,6 +16,7 @@
     IBOutlet UIImageView *cabeView;
     IBOutlet UIButton *hiddenbt;
     IBOutlet UIButton *reloadbt;
+    SystemSoundID sound_1;
 }
 
 -(IBAction)cabeButton;

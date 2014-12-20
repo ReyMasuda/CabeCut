@@ -31,6 +31,10 @@
 		D684C45C1A20758300949818 /* cabe10.png in Resources */ = {isa = PBXBuildFile; fileRef = D684C4541A20758300949818 /* cabe10.png */; };
 		D684C45F1A207ABC00949818 /* cabe1.png in Resources */ = {isa = PBXBuildFile; fileRef = D684C45D1A207ABC00949818 /* cabe1.png */; };
 		D684C4601A207ABC00949818 /* cabe6.png in Resources */ = {isa = PBXBuildFile; fileRef = D684C45E1A207ABC00949818 /* cabe6.png */; };
+		D69241A11A4566FC009A3960 /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D69241A01A4566FC009A3960 /* photo.jpg */; };
+		D69241A31A45957B009A3960 /* cut-button-4183464.png in Resources */ = {isa = PBXBuildFile; fileRef = D69241A21A45957B009A3960 /* cut-button-4183464.png */; };
+		D6F60FF51A4555C100B4B780 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F60FF41A4555C100B4B780 /* AudioToolbox.framework */; };
+		D6F60FF71A45565D00B4B780 /* katana.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D6F60FF61A45565D00B4B780 /* katana.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		D684C4541A20758300949818 /* cabe10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cabe10.png; sourceTree = "<group>"; };
 		D684C45D1A207ABC00949818 /* cabe1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cabe1.png; sourceTree = "<group>"; };
 		D684C45E1A207ABC00949818 /* cabe6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cabe6.png; sourceTree = "<group>"; };
+		D69241A01A4566FC009A3960 /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
+		D69241A21A45957B009A3960 /* cut-button-4183464.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cut-button-4183464.png"; sourceTree = "<group>"; };
+		D6F60FF41A4555C100B4B780 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D6F60FF61A45565D00B4B780 /* katana.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = katana.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F60FF51A4555C100B4B780 /* AudioToolbox.framework in Frameworks */,
 				D60BC9C41A1760F100F59BFE /* CoreGraphics.framework in Frameworks */,
 				D60BC9C61A1760F100F59BFE /* UIKit.framework in Frameworks */,
 				D60BC9C21A1760F100F59BFE /* Foundation.framework in Frameworks */,
@@ -116,6 +125,9 @@
 				D684C4521A20758300949818 /* cabe8.png */,
 				D684C4531A20758300949818 /* cabe9.png */,
 				D684C4541A20758300949818 /* cabe10.png */,
+				D6F60FF61A45565D00B4B780 /* katana.mp3 */,
+				D69241A01A4566FC009A3960 /* photo.jpg */,
+				D69241A21A45957B009A3960 /* cut-button-4183464.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +143,7 @@
 		D60BC9C01A1760F100F59BFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6F60FF41A4555C100B4B780 /* AudioToolbox.framework */,
 				D60BC9C11A1760F100F59BFE /* Foundation.framework */,
 				D60BC9C31A1760F100F59BFE /* CoreGraphics.framework */,
 				D60BC9C51A1760F100F59BFE /* UIKit.framework */,
@@ -260,16 +273,19 @@
 			files = (
 				D60BC9DA1A1760F100F59BFE /* Images.xcassets in Resources */,
 				D684C4581A20758300949818 /* cabe5.png in Resources */,
+				D69241A11A4566FC009A3960 /* photo.jpg in Resources */,
 				D684C4551A20758300949818 /* cabe2.png in Resources */,
 				D684C45C1A20758300949818 /* cabe10.png in Resources */,
 				D684C4571A20758300949818 /* cabe4.png in Resources */,
 				D684C4591A20758300949818 /* cabe7.png in Resources */,
 				D60BC9CC1A1760F100F59BFE /* InfoPlist.strings in Resources */,
 				D684C45F1A207ABC00949818 /* cabe1.png in Resources */,
+				D69241A31A45957B009A3960 /* cut-button-4183464.png in Resources */,
 				D684C45B1A20758300949818 /* cabe9.png in Resources */,
 				D684C4561A20758300949818 /* cabe3.png in Resources */,
 				D684C45A1A20758300949818 /* cabe8.png in Resources */,
 				D60BC9D51A1760F100F59BFE /* Main.storyboard in Resources */,
+				D6F60FF71A45565D00B4B780 /* katana.mp3 in Resources */,
 				D684C4601A207ABC00949818 /* cabe6.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
