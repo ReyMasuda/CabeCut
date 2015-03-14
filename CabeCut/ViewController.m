@@ -17,6 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    time = 60.0;
+    timeLabel.text = [NSString stringWithFormat:@"%.2f",time];
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.01
+                                             target:self
+                                           selector:@selector(up)
+                                           userInfo:nil
+                                            repeats:YES];
+    
     number = 10;
     cut = 1;
     reloadbt.hidden = YES;
@@ -25,6 +33,8 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"katana" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:path];
     AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(url), &sound_1);
+    
+    [self loadAdMobInterstitial];
 }
 
 -(IBAction)cabeButton{
@@ -43,6 +53,7 @@
     
      AudioServicesPlaySystemSound(sound_1);
     
+    
 }
 
 -(IBAction)ReloadButton{
@@ -54,6 +65,28 @@
     if (number ==10) {
         reloadbt.hidden = YES;
     }
+}
+
+
+- (void)loadAdMobInterstitial{
+    interstitial_ = [[GADInterstitial alloc] init];
+    interstitial_.adUnitID = @"pub-3285273497958910";
+    interstitial_.delegate = self;
+    [interstitial_ loadRequest:[GADRequest request]];
+}
+
+- (void)interstitialDidReceiveAd:(GADInterstitial *)ad {
+    [interstitial_ presentFromRootViewController:self];
+}
+
+- (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error{
+    NSLog(@"interstitial erorr");
+}
+
+-(void)up{
+    time-= 0.01;
+    timeLabel.text = [NSString stringWithFormat:@"%.2f",time];
+    
 }
 
 
