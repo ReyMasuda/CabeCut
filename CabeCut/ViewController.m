@@ -87,6 +87,10 @@
     time-= 0.01;
     timeLabel.text = [NSString stringWithFormat:@"%.2f",time];
     
+    if (time = 0.0) {
+        
+    }
+    
 }
 
 
