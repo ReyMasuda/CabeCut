@@ -6,10 +6,12 @@
 //  Copyright (c) 2014年 Rey Masuda. All rights reserved.
 //
 
+int number; //乱数を入れておく変数。2画面で共有するため、グローバルに宣言
+
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
 
-@interface ViewController : UIViewController{
+@interface TimeViewController : UIViewController{
     int number;
     int cut;
     IBOutlet UILabel *label;

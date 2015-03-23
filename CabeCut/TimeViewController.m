@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 Rey Masuda. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TimeViewController.h"
 
-@interface ViewController ()
+@interface TimeViewController ()
 
 @end
 
-@implementation ViewController : UIViewController
+@implementation TimeViewController : UIViewController
 
 - (void)viewDidLoad
 {
