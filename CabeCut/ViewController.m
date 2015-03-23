@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    time = 60.0;
+    time = 5.0;
     timeLabel.text = [NSString stringWithFormat:@"%.2f",time];
     timer = [NSTimer scheduledTimerWithTimeInterval:0.01
                                              target:self
@@ -70,7 +70,7 @@
 
 - (void)loadAdMobInterstitial{
     interstitial_ = [[GADInterstitial alloc] init];
-    interstitial_.adUnitID = @"pub-3285273497958910";
+    interstitial_.adUnitID = @"pub-3940256099942544";
     interstitial_.delegate = self;
     [interstitial_ loadRequest:[GADRequest request]];
 }
@@ -87,11 +87,19 @@
     time-= 0.01;
     timeLabel.text = [NSString stringWithFormat:@"%.2f",time];
     
-    if (time = 0.0) {
-        
+    if (time < 0.0) {
+        NSLog(@"%f",time);
+         [timer invalidate];
+        [self performSegueWithIdentifier:@"toScore" sender:self];
     }
     
 }
+
+-(IBAction)menuBt{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 
 
 

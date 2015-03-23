@@ -28,6 +28,7 @@
 
 -(IBAction)cabeButton;
 -(IBAction)ReloadButton;
+-(IBAction)menuBt;
 
 -(void)up;
 

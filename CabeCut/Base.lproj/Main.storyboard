@@ -91,6 +91,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds4-em-acF">
+                                <rect key="frame" x="259" y="36" width="45" height="30"/>
+                                <state key="normal" title="MENU">
+                                    <color key="titleColor" red="0.62794349400000005" green="0.916219055" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="menuBt" destination="vXZ-lx-hvc" eventType="touchUpInside" id="a82-US-amM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.71201959873382215" green="0.71925951086956519" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -101,11 +111,31 @@
                         <outlet property="label" destination="NZT-Ms-r28" id="le3-KA-tMC"/>
                         <outlet property="reloadbt" destination="IUU-PJ-nzy" id="bSi-K6-QdG"/>
                         <outlet property="timeLabel" destination="0mJ-EJ-A6J" id="ZH4-IC-RKk"/>
+                        <segue destination="wAn-xe-GSz" kind="modal" identifier="toScore" id="Ums-as-ieI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-353" y="-279"/>
+            <point key="canvasLocation" x="-361" y="-309"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lGi-VF-MGn">
+            <objects>
+                <viewController id="wAn-xe-GSz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QL1-e2-qvZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="yXf-hG-LT6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n49-fX-oc2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="17m-3k-405"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbu-Rr-K9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="-318"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Pd5-UL-eXm">
