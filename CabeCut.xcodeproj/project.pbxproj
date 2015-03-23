@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CBAE722AC882FD0893858B46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B3CB2E263E2273978DA86 /* libPods.a */; };
+		CE63654F1ABFE44800F75599 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE63654D1ABFE44800F75599 /* MenuViewController.m */; };
+		CE6365531ABFE88500F75599 /* BassaBassaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6365521ABFE88500F75599 /* BassaBassaViewController.m */; };
 		D60BC9C21A1760F100F59BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60BC9C11A1760F100F59BFE /* Foundation.framework */; };
 		D60BC9C41A1760F100F59BFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60BC9C31A1760F100F59BFE /* CoreGraphics.framework */; };
 		D60BC9C61A1760F100F59BFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60BC9C51A1760F100F59BFE /* UIKit.framework */; };
@@ -52,6 +54,10 @@
 		B26E3D27AFAB05891B7049E4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B59B3CB2E263E2273978DA86 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8275B6B7BCC0D49B757425D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CE63654C1ABFE44800F75599 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		CE63654D1ABFE44800F75599 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		CE6365511ABFE88500F75599 /* BassaBassaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BassaBassaViewController.h; sourceTree = "<group>"; };
+		CE6365521ABFE88500F75599 /* BassaBassaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BassaBassaViewController.m; sourceTree = "<group>"; };
 		D60BC9BE1A1760F100F59BFE /* CabeCut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CabeCut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60BC9C11A1760F100F59BFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D60BC9C31A1760F100F59BFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -175,6 +181,10 @@
 				D60BC9D11A1760F100F59BFE /* AppDelegate.m */,
 				D60BC9D61A1760F100F59BFE /* ViewController.h */,
 				D60BC9D71A1760F100F59BFE /* ViewController.m */,
+				CE63654C1ABFE44800F75599 /* MenuViewController.h */,
+				CE63654D1ABFE44800F75599 /* MenuViewController.m */,
+				CE6365511ABFE88500F75599 /* BassaBassaViewController.h */,
+				CE6365521ABFE88500F75599 /* BassaBassaViewController.m */,
 				D60BC9D31A1760F100F59BFE /* Main.storyboard */,
 				D60BC9D91A1760F100F59BFE /* Images.xcassets */,
 				D60BC9C81A1760F100F59BFE /* Supporting Files */,
@@ -357,8 +367,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D60BC9D81A1760F100F59BFE /* ViewController.m in Sources */,
+				CE6365531ABFE88500F75599 /* BassaBassaViewController.m in Sources */,
 				D60BC9D21A1760F100F59BFE /* AppDelegate.m in Sources */,
 				D60BC9CE1A1760F100F59BFE /* main.m in Sources */,
+				CE63654F1ABFE44800F75599 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
