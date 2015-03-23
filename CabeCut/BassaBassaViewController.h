@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
-@interface BassaBassaViewController : UIViewController
+
+@interface BassaBassaViewController : UIViewController{
+    int number;
+    int cut;
+    IBOutlet UILabel *label;
+    IBOutlet UIImageView *cabeView;
+    IBOutlet UIButton *hiddenbt;
+    IBOutlet UIButton *reloadbt;
+    SystemSoundID sound_1;
+}
+
+-(IBAction)cabeButton;
+-(IBAction)ReloadButton;
+-(IBAction)menuBt;
 
 @end

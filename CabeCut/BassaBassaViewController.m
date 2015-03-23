@@ -17,11 +17,54 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    number = 10;
+    cut = 1;
+    reloadbt.hidden = YES;
+    
+    //効果音ファイル読み込み
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"katana" ofType:@"mp3"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(url), &sound_1);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)menuBt{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(IBAction)cabeButton{
+    number=number -1;
+    cut = cut+1;
+    label.text = [NSString stringWithFormat:@"%d",number];
+    NSString *imagePath =[NSString stringWithFormat:@"cabe%d.png",cut];
+    cabeView.image=[UIImage imageNamed:imagePath];
+    if (number ==0) {
+        hiddenbt.hidden = YES;
+    }
+    
+    if (number == 0) {
+        reloadbt.hidden = NO;
+    }
+    
+    AudioServicesPlaySystemSound(sound_1);
+    
+    
+}
+
+-(IBAction)ReloadButton{
+    number=10;
+    label.text = [NSString stringWithFormat:@"%d",number];
+    cabeView.image=[UIImage imageNamed:@"cabe1.png"];
+    cut = 1;
+    hiddenbt.hidden = NO;
+    if (number ==10) {
+        reloadbt.hidden = YES;
+    }
 }
 
 

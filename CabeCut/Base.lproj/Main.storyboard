@@ -85,12 +85,6 @@
                                     <action selector="ReloadButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SeJ-2q-JyJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mJ-EJ-A6J">
-                                <rect key="frame" x="126" y="36" width="69" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds4-em-acF">
                                 <rect key="frame" x="259" y="36" width="45" height="30"/>
                                 <state key="normal" title="MENU">
@@ -101,6 +95,12 @@
                                     <action selector="menuBt" destination="vXZ-lx-hvc" eventType="touchUpInside" id="a82-US-amM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mJ-EJ-A6J">
+                                <rect key="frame" x="126" y="36" width="69" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.71201959873382215" green="0.71925951086956519" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="96" y="-318"/>
         </scene>
-        <!--View Controller-->
+        <!--Bassa Bassa View Controller-->
         <scene sceneID="Pd5-UL-eXm">
             <objects>
-                <viewController id="ujD-0t-4YS" sceneMemberID="viewController">
+                <viewController id="ujD-0t-4YS" customClass="BassaBassaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="46n-Br-Kan"/>
                         <viewControllerLayoutGuide type="bottom" id="Rfs-mK-1tb"/>
@@ -148,12 +148,60 @@
                     <view key="view" contentMode="scaleToFill" id="ltw-kO-Ac5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5J-Bc-mZ8">
+                                <rect key="frame" x="135" y="83" width="50" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSv-D2-nhl">
+                                <rect key="frame" x="259" y="36" width="45" height="30"/>
+                                <state key="normal" title="MENU">
+                                    <color key="titleColor" red="0.62794349400000005" green="0.916219055" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="menuBt" destination="ujD-0t-4YS" eventType="touchUpInside" id="5nG-Ej-qLL"/>
+                                    <action selector="menuBt" destination="vXZ-lx-hvc" eventType="touchUpInside" id="goO-KV-JTg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeG-0a-gtO">
+                                <rect key="frame" x="9" y="483" width="47" height="47"/>
+                                <state key="normal" title="Reload" image="photo.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ReloadButton" destination="ujD-0t-4YS" eventType="touchUpInside" id="cGA-wr-9hP"/>
+                                    <action selector="ReloadButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tHJ-S3-W8u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc0-S8-9t6">
+                                <rect key="frame" x="60" y="360" width="200" height="200"/>
+                                <state key="normal" title="Cabe" image="cut-button-4183464.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cabeButton" destination="ujD-0t-4YS" eventType="touchUpInside" id="9w5-5C-3D0"/>
+                                    <action selector="cabeButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oQd-Xm-OBp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cabe1.png" translatesAutoresizingMaskIntoConstraints="NO" id="AIC-sH-hU0">
+                                <rect key="frame" x="40" y="83" width="240" height="401"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6588235294117647" green="0.67450980392156867" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="cabeView" destination="AIC-sH-hU0" id="Epe-gI-wUH"/>
+                        <outlet property="hiddenbt" destination="Wc0-S8-9t6" id="cmD-pK-Z4f"/>
+                        <outlet property="label" destination="P5J-Bc-mZ8" id="t0S-rJ-MLK"/>
+                        <outlet property="reloadbt" destination="CeG-0a-gtO" id="9Id-K0-Hbc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nos-Va-5qt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-353" y="321"/>
+            <point key="canvasLocation" x="-361" y="321"/>
         </scene>
     </scenes>
     <resources>
