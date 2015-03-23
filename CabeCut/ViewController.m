@@ -33,8 +33,7 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"katana" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:path];
     AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(url), &sound_1);
-    
-    [self loadAdMobInterstitial];
+
 }
 
 -(IBAction)cabeButton{
@@ -67,21 +66,6 @@
     }
 }
 
-
-- (void)loadAdMobInterstitial{
-    interstitial_ = [[GADInterstitial alloc] init];
-    interstitial_.adUnitID = @"pub-3940256099942544";
-    interstitial_.delegate = self;
-    [interstitial_ loadRequest:[GADRequest request]];
-}
-
-- (void)interstitialDidReceiveAd:(GADInterstitial *)ad {
-    [interstitial_ presentFromRootViewController:self];
-}
-
-- (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error{
-    NSLog(@"interstitial erorr");
-}
 
 -(void)up{
     time-= 0.01;

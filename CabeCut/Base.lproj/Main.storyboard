@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="-361" y="-309"/>
         </scene>
-        <!--View Controller-->
+        <!--Bassa Score View Controller-->
         <scene sceneID="lGi-VF-MGn">
             <objects>
-                <viewController id="wAn-xe-GSz" sceneMemberID="viewController">
+                <viewController id="wAn-xe-GSz" customClass="BassaScoreViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QL1-e2-qvZ"/>
                         <viewControllerLayoutGuide type="bottom" id="yXf-hG-LT6"/>
@@ -129,13 +129,21 @@
                     <view key="view" contentMode="scaleToFill" id="n49-fX-oc2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4P-kS-4bK">
+                                <rect key="frame" x="59" y="63" width="203" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6588235294117647" green="0.67450980392156867" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="17m-3k-405"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hbu-Rr-K9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96" y="-318"/>
+            <point key="canvasLocation" x="-5" y="-309"/>
         </scene>
         <!--Bassa Bassa View Controller-->
         <scene sceneID="Pd5-UL-eXm">

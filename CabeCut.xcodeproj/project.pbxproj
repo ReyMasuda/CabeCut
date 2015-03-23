@@ -10,6 +10,7 @@
 		CBAE722AC882FD0893858B46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B3CB2E263E2273978DA86 /* libPods.a */; };
 		CE63654F1ABFE44800F75599 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE63654D1ABFE44800F75599 /* MenuViewController.m */; };
 		CE6365531ABFE88500F75599 /* BassaBassaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6365521ABFE88500F75599 /* BassaBassaViewController.m */; };
+		CE6365561AC003B500F75599 /* BassaScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6365551AC003B500F75599 /* BassaScoreViewController.m */; };
 		D60BC9C21A1760F100F59BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60BC9C11A1760F100F59BFE /* Foundation.framework */; };
 		D60BC9C41A1760F100F59BFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60BC9C31A1760F100F59BFE /* CoreGraphics.framework */; };
 		D60BC9C61A1760F100F59BFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60BC9C51A1760F100F59BFE /* UIKit.framework */; };
@@ -58,6 +59,8 @@
 		CE63654D1ABFE44800F75599 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		CE6365511ABFE88500F75599 /* BassaBassaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BassaBassaViewController.h; sourceTree = "<group>"; };
 		CE6365521ABFE88500F75599 /* BassaBassaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BassaBassaViewController.m; sourceTree = "<group>"; };
+		CE6365541AC003B500F75599 /* BassaScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BassaScoreViewController.h; sourceTree = "<group>"; };
+		CE6365551AC003B500F75599 /* BassaScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BassaScoreViewController.m; sourceTree = "<group>"; };
 		D60BC9BE1A1760F100F59BFE /* CabeCut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CabeCut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60BC9C11A1760F100F59BFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D60BC9C31A1760F100F59BFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -185,6 +188,8 @@
 				CE63654D1ABFE44800F75599 /* MenuViewController.m */,
 				CE6365511ABFE88500F75599 /* BassaBassaViewController.h */,
 				CE6365521ABFE88500F75599 /* BassaBassaViewController.m */,
+				CE6365541AC003B500F75599 /* BassaScoreViewController.h */,
+				CE6365551AC003B500F75599 /* BassaScoreViewController.m */,
 				D60BC9D31A1760F100F59BFE /* Main.storyboard */,
 				D60BC9D91A1760F100F59BFE /* Images.xcassets */,
 				D60BC9C81A1760F100F59BFE /* Supporting Files */,
@@ -270,6 +275,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Rey Masuda";
 				TargetAttributes = {
+					D60BC9BD1A1760F000F59BFE = {
+						DevelopmentTeam = BS6DPBBKZP;
+					};
 					D60BC9DE1A1760F100F59BFE = {
 						TestTargetID = D60BC9BD1A1760F000F59BFE;
 					};
@@ -370,6 +378,7 @@
 				CE6365531ABFE88500F75599 /* BassaBassaViewController.m in Sources */,
 				D60BC9D21A1760F100F59BFE /* AppDelegate.m in Sources */,
 				D60BC9CE1A1760F100F59BFE /* main.m in Sources */,
+				CE6365561AC003B500F75599 /* BassaScoreViewController.m in Sources */,
 				CE63654F1ABFE44800F75599 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,9 +505,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CabeCut/CabeCut-Prefix.pch";
 				INFOPLIST_FILE = "CabeCut/CabeCut-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -510,9 +521,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CabeCut/CabeCut-Prefix.pch";
 				INFOPLIST_FILE = "CabeCut/CabeCut-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

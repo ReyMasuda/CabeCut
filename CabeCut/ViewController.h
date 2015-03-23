@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
-#import "GADInterstitial.h"
-#import "GADInterstitialDelegate.h"
 
-@interface ViewController : UIViewController<GADInterstitialDelegate>{
+@interface ViewController : UIViewController{
     int number;
     int cut;
     IBOutlet UILabel *label;
@@ -22,8 +20,7 @@
     float time;
     NSTimer *timer;
     IBOutlet UILabel *timeLabel;
-    
-    GADInterstitial *interstitial_;
+
 }
 
 -(IBAction)cabeButton;
