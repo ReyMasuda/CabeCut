@@ -177,15 +177,6 @@
                                     <action selector="ReloadButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tHJ-S3-W8u"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc0-S8-9t6">
-                                <rect key="frame" x="60" y="360" width="200" height="200"/>
-                                <state key="normal" title="Cabe" image="cut-button-4183464.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="cabeButton" destination="ujD-0t-4YS" eventType="touchUpInside" id="9w5-5C-3D0"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cabe1.png" translatesAutoresizingMaskIntoConstraints="NO" id="AIC-sH-hU0">
                                 <rect key="frame" x="40" y="83" width="240" height="401"/>
                             </imageView>
@@ -210,7 +201,6 @@
                     </view>
                     <connections>
                         <outlet property="cabeView" destination="AIC-sH-hU0" id="Epe-gI-wUH"/>
-                        <outlet property="hiddenbt" destination="Wc0-S8-9t6" id="cmD-pK-Z4f"/>
                         <outlet property="label" destination="P5J-Bc-mZ8" id="t0S-rJ-MLK"/>
                         <outlet property="reloadbt" destination="CeG-0a-gtO" id="9Id-K0-Hbc"/>
                     </connections>
@@ -231,19 +221,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v1-nn-pdV">
+                                <rect key="frame" x="259" y="36" width="45" height="30"/>
+                                <state key="normal" title="MENU">
+                                    <color key="titleColor" red="0.62794349400000005" green="0.916219055" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="menuBt" destination="ujD-0t-4YS" eventType="touchUpInside" id="fy4-Gx-MLr"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFF-cB-iYq">
-                                <rect key="frame" x="59" y="63" width="203" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="94" y="112" width="132" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.59607843137254901" green="0.62352941176470589" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="PFF-cB-iYq" id="kxi-Ew-VvU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J6J-nq-wyi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5" y="321"/>
+            <point key="canvasLocation" x="-5" y="343"/>
         </scene>
     </scenes>
     <resources>

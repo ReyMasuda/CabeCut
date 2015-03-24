@@ -52,7 +52,7 @@
     
      AudioServicesPlaySystemSound(sound_1);
     
-    scorenumber=scorenumber+1;
+    scorenumber=scorenumber +1;
     
 }
 

@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "GADInterstitial.h"
 #import "GADInterstitialDelegate.h"
+#import <Social/Social.h>
+#import <Twitter/Twitter.h>
 
 @interface BassaScoreViewController : UIViewController<GADInterstitialDelegate>{
     int number;

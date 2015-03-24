@@ -7,6 +7,7 @@
 //
 
 #import "BassaBassaViewController.h"
+#import "ViewController.h"
 
 @interface BassaBassaViewController ()
 
@@ -53,6 +54,7 @@
     
     AudioServicesPlaySystemSound(sound_1);
     
+    scorenumber=scorenumber +1;
     
 }
 
