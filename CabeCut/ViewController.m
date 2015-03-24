@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 Rey Masuda. All rights reserved.
 //
 
-#import "TimeViewController.h"
+#import "ViewController.h"
 
-@interface TimeViewController ()
+@interface ViewController ()
 
 @end
 
-@implementation TimeViewController : UIViewController
+@implementation ViewController : UIViewController
 
 - (void)viewDidLoad
 {
@@ -52,6 +52,7 @@
     
      AudioServicesPlaySystemSound(sound_1);
     
+    scorenumber=scorenumber+1;
     
 }
 

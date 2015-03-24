@@ -20,22 +20,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6g-PV-Qav">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="573"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1o-za-LUl">
-                                <rect key="frame" x="100" y="453" width="120" height="30"/>
-                                <state key="normal" title="バッサバッサ切る">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="FHK-9S-KLx"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDg-0f-1hl">
-                                <rect key="frame" x="93" y="391" width="135" height="30"/>
-                                <state key="normal" title="時間に縛られて切る">
+                                <rect key="frame" x="115" y="391" width="90" height="30"/>
+                                <state key="normal" title="バッサバッサ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="ujD-0t-4YS" kind="modal" id="JWI-ly-5CF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1o-za-LUl">
+                                <rect key="frame" x="145" y="453" width="30" height="30"/>
+                                <state key="normal" title="時間">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="FHK-9S-KLx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,10 +81,13 @@
                                 <state key="normal" title="Reload" image="photo.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="ReloadButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SeJ-2q-JyJ"/>
-                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mJ-EJ-A6J">
+                                <rect key="frame" x="126" y="36" width="69" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds4-em-acF">
                                 <rect key="frame" x="259" y="36" width="45" height="30"/>
                                 <state key="normal" title="MENU">
@@ -95,12 +98,6 @@
                                     <action selector="menuBt" destination="vXZ-lx-hvc" eventType="touchUpInside" id="a82-US-amM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mJ-EJ-A6J">
-                                <rect key="frame" x="126" y="36" width="69" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.71201959873382215" green="0.71925951086956519" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -140,6 +137,9 @@
                         <color key="backgroundColor" red="0.6588235294117647" green="0.67450980392156867" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="17m-3k-405"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="Q4P-kS-4bK" id="Umo-YO-Y9d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hbu-Rr-K9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,7 +165,6 @@
                                 </state>
                                 <connections>
                                     <action selector="menuBt" destination="ujD-0t-4YS" eventType="touchUpInside" id="5nG-Ej-qLL"/>
-                                    <action selector="menuBt" destination="vXZ-lx-hvc" eventType="touchUpInside" id="goO-KV-JTg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeG-0a-gtO">
@@ -185,7 +184,6 @@
                                 </state>
                                 <connections>
                                     <action selector="cabeButton" destination="ujD-0t-4YS" eventType="touchUpInside" id="9w5-5C-3D0"/>
-                                    <action selector="cabeButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oQd-Xm-OBp"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cabe1.png" translatesAutoresizingMaskIntoConstraints="NO" id="AIC-sH-hU0">
@@ -219,7 +217,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nos-Va-5qt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-361" y="321"/>
+            <point key="canvasLocation" x="-361" y="343"/>
         </scene>
         <!--Free Score View Controller-->
         <scene sceneID="P8U-W4-h3O">

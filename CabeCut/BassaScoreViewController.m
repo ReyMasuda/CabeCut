@@ -7,6 +7,7 @@
 //
 
 #import "BassaScoreViewController.h"
+#import "ViewController.h"
 
 @interface BassaScoreViewController ()
 
@@ -19,6 +20,9 @@
     // Do any additional setup after loading the view.
     
     [self loadAdMobInterstitial];
+    
+    scorenumber=scorenumber+1;
+    scoreLabel.text = [NSString stringWithFormat:@"%d",scorenumber];
 }
 
 - (void)didReceiveMemoryWarning {

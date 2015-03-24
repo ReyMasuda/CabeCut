@@ -10,6 +10,8 @@
 		CBAE722AC882FD0893858B46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B3CB2E263E2273978DA86 /* libPods.a */; };
 		CE63654F1ABFE44800F75599 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE63654D1ABFE44800F75599 /* MenuViewController.m */; };
 		CE6365531ABFE88500F75599 /* BassaBassaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6365521ABFE88500F75599 /* BassaBassaViewController.m */; };
+		CE6C74471AC107C300014535 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C74461AC107C300014535 /* Twitter.framework */; };
+		CE6C74491AC107D000014535 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C74481AC107D000014535 /* Social.framework */; };
 		CEA7EC271AC00A7B00CB1140 /* BassaScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7EC261AC00A7B00CB1140 /* BassaScoreViewController.m */; };
 		CEA7EC2A1AC00AA000CB1140 /* FreeScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7EC291AC00AA000CB1140 /* FreeScoreViewController.m */; };
 		D60BC9C21A1760F100F59BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60BC9C11A1760F100F59BFE /* Foundation.framework */; };
@@ -19,7 +21,7 @@
 		D60BC9CE1A1760F100F59BFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D60BC9CD1A1760F100F59BFE /* main.m */; };
 		D60BC9D21A1760F100F59BFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D60BC9D11A1760F100F59BFE /* AppDelegate.m */; };
 		D60BC9D51A1760F100F59BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60BC9D31A1760F100F59BFE /* Main.storyboard */; };
-		D60BC9D81A1760F100F59BFE /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60BC9D71A1760F100F59BFE /* TimeViewController.m */; };
+		D60BC9D81A1760F100F59BFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60BC9D71A1760F100F59BFE /* ViewController.m */; };
 		D60BC9DA1A1760F100F59BFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60BC9D91A1760F100F59BFE /* Images.xcassets */; };
 		D60BC9E11A1760F100F59BFE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60BC9E01A1760F100F59BFE /* XCTest.framework */; };
 		D60BC9E21A1760F100F59BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60BC9C11A1760F100F59BFE /* Foundation.framework */; };
@@ -60,6 +62,8 @@
 		CE63654D1ABFE44800F75599 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		CE6365511ABFE88500F75599 /* BassaBassaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BassaBassaViewController.h; sourceTree = "<group>"; };
 		CE6365521ABFE88500F75599 /* BassaBassaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BassaBassaViewController.m; sourceTree = "<group>"; };
+		CE6C74461AC107C300014535 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		CE6C74481AC107D000014535 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		CEA7EC251AC00A7B00CB1140 /* BassaScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BassaScoreViewController.h; sourceTree = "<group>"; };
 		CEA7EC261AC00A7B00CB1140 /* BassaScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BassaScoreViewController.m; sourceTree = "<group>"; };
 		CEA7EC281AC00AA000CB1140 /* FreeScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeScoreViewController.h; sourceTree = "<group>"; };
@@ -75,8 +79,8 @@
 		D60BC9D01A1760F100F59BFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D60BC9D11A1760F100F59BFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D60BC9D41A1760F100F59BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D60BC9D61A1760F100F59BFE /* TimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
-		D60BC9D71A1760F100F59BFE /* TimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		D60BC9D61A1760F100F59BFE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D60BC9D71A1760F100F59BFE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D60BC9D91A1760F100F59BFE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D60BC9DF1A1760F100F59BFE /* CabeCutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CabeCutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60BC9E01A1760F100F59BFE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -104,6 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6C74491AC107D000014535 /* Social.framework in Frameworks */,
+				CE6C74471AC107C300014535 /* Twitter.framework in Frameworks */,
 				D6F60FF51A4555C100B4B780 /* AudioToolbox.framework in Frameworks */,
 				D60BC9C41A1760F100F59BFE /* CoreGraphics.framework in Frameworks */,
 				D60BC9C61A1760F100F59BFE /* UIKit.framework in Frameworks */,
@@ -170,6 +176,8 @@
 		D60BC9C01A1760F100F59BFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE6C74481AC107D000014535 /* Social.framework */,
+				CE6C74461AC107C300014535 /* Twitter.framework */,
 				D6F60FF41A4555C100B4B780 /* AudioToolbox.framework */,
 				D60BC9C11A1760F100F59BFE /* Foundation.framework */,
 				D60BC9C31A1760F100F59BFE /* CoreGraphics.framework */,
@@ -187,8 +195,8 @@
 				D60BC9D11A1760F100F59BFE /* AppDelegate.m */,
 				CE63654C1ABFE44800F75599 /* MenuViewController.h */,
 				CE63654D1ABFE44800F75599 /* MenuViewController.m */,
-				D60BC9D61A1760F100F59BFE /* TimeViewController.h */,
-				D60BC9D71A1760F100F59BFE /* TimeViewController.m */,
+				D60BC9D61A1760F100F59BFE /* ViewController.h */,
+				D60BC9D71A1760F100F59BFE /* ViewController.m */,
 				CE6365511ABFE88500F75599 /* BassaBassaViewController.h */,
 				CE6365521ABFE88500F75599 /* BassaBassaViewController.m */,
 				CEA7EC251AC00A7B00CB1140 /* BassaScoreViewController.h */,
@@ -379,7 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D60BC9D81A1760F100F59BFE /* TimeViewController.m in Sources */,
+				D60BC9D81A1760F100F59BFE /* ViewController.m in Sources */,
 				CE6365531ABFE88500F75599 /* BassaBassaViewController.m in Sources */,
 				D60BC9D21A1760F100F59BFE /* AppDelegate.m in Sources */,
 				D60BC9CE1A1760F100F59BFE /* main.m in Sources */,

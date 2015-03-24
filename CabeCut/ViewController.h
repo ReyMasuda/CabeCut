@@ -7,11 +7,13 @@
 //
 
 int number; //乱数を入れておく変数。2画面で共有するため、グローバルに宣言
+int scorenumber;
+IBOutlet UILabel *scoreLabel;
 
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
 
-@interface TimeViewController : UIViewController{
+@interface ViewController : UIViewController{
     int number;
     int cut;
     IBOutlet UILabel *label;
