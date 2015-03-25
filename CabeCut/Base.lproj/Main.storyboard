@@ -35,9 +35,6 @@
                                     <segue destination="vXZ-lx-hvc" kind="modal" id="FHK-9S-KLx"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="manaita.png" translatesAutoresizingMaskIntoConstraints="NO" id="c6g-PV-Qav">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -69,7 +66,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qu-kD-Ff7">
                                 <rect key="frame" x="60" y="360" width="200" height="200"/>
-                                <state key="normal" title="Cabe" image="cut-button-4183464.png">
+                                <state key="normal" title="Cabe" image="hotyo.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -113,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-361" y="-309"/>
+            <point key="canvasLocation" x="-361" y="-277"/>
         </scene>
         <!--Bassa Score View Controller-->
         <scene sceneID="lGi-VF-MGn">
@@ -223,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nos-Va-5qt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-361" y="343"/>
+            <point key="canvasLocation" x="-361" y="352"/>
         </scene>
         <!--Free Score View Controller-->
         <scene sceneID="P8U-W4-h3O">
@@ -290,9 +287,7 @@
     </scenes>
     <resources>
         <image name="cabe1.png" width="640" height="1136"/>
-        <image name="cut-button-4183464.png" width="400" height="385"/>
         <image name="hotyo.png" width="400" height="400"/>
-        <image name="manaita.png" width="477" height="804"/>
         <image name="photo.jpg" width="250" height="250"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

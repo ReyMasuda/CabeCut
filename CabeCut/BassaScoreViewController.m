@@ -46,7 +46,7 @@
 }
 
 - (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error{
-    NSLog(@"interstitial erorr");
+    NSLog(@"interstitial error");
 }
 
 // Twitter
