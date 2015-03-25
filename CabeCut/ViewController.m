@@ -54,6 +54,24 @@
     
     scorenumber=scorenumber +1;
     
+    if (UIEventSubtypeMotionShake) {
+        number = number -1;
+        cut = cut+1;
+        label.text = [NSString stringWithFormat:@"%d",number];
+        NSString *imagePath =[NSString stringWithFormat:@"cabe%d.png",cut];
+        cabeView.image=[UIImage imageNamed:imagePath];
+        if (number ==0) {
+            hiddenbt.hidden = YES;
+        }
+        
+        if (number == 0) {
+            reloadbt.hidden = NO;
+        }
+        
+        AudioServicesPlaySystemSound(sound_1);
+        
+        scorenumber=scorenumber +1;
+    }
 }
 
 -(IBAction)ReloadButton{
@@ -83,9 +101,6 @@
 -(IBAction)menuBt{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-
-
 
 
 @end

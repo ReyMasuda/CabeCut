@@ -55,7 +55,6 @@
     AudioServicesPlaySystemSound(sound_1);
     
     scorenumber=scorenumber +1;
-    
 }
 
 -(IBAction)ReloadButton{
@@ -68,9 +67,6 @@
         reloadbt.hidden = YES;
     }
 }
-
-
-
 
 
 @end

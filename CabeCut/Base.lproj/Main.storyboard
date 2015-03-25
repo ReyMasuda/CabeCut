@@ -17,9 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6g-PV-Qav">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="573"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDg-0f-1hl">
                                 <rect key="frame" x="115" y="391" width="90" height="30"/>
                                 <state key="normal" title="バッサバッサ">
@@ -38,13 +35,16 @@
                                     <segue destination="vXZ-lx-hvc" kind="modal" id="FHK-9S-KLx"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="manaita.png" translatesAutoresizingMaskIntoConstraints="NO" id="c6g-PV-Qav">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQx-U9-mdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-719" y="3"/>
+            <point key="canvasLocation" x="-688" y="21"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -128,11 +128,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4P-kS-4bK">
-                                <rect key="frame" x="59" y="63" width="203" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="94" y="112" width="132" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yo-E8-kck">
+                                <rect key="frame" x="258" y="35" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.6588235294117647" green="0.67450980392156867" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -196,11 +202,21 @@
                                     <segue destination="ZFj-RZ-i08" kind="modal" id="iun-X7-3nW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qa8-a0-Ofe">
+                                <rect key="frame" x="64" y="338" width="192" height="192"/>
+                                <state key="normal" title="Button" image="hotyo.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cabeButton" destination="ujD-0t-4YS" eventType="touchUpInside" id="ypl-Pw-8na"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.6588235294117647" green="0.67450980392156867" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="cabeView" destination="AIC-sH-hU0" id="Epe-gI-wUH"/>
+                        <outlet property="hiddenbt" destination="qa8-a0-Ofe" id="FLa-Cn-zrn"/>
                         <outlet property="label" destination="P5J-Bc-mZ8" id="t0S-rJ-MLK"/>
                         <outlet property="reloadbt" destination="CeG-0a-gtO" id="9Id-K0-Hbc"/>
                     </connections>
@@ -237,6 +253,29 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru8-Nv-jJc">
+                                <rect key="frame" x="123" y="326" width="75" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="MENU">
+                                    <color key="titleColor" red="0.62794349400000005" green="0.916219055" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="menuBt" destination="ujD-0t-4YS" eventType="touchUpInside" id="5jF-iV-svS"/>
+                                    <segue destination="xxR-mc-gcC" kind="modal" id="voF-8F-hCz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0e-0U-0yZ">
+                                <rect key="frame" x="116" y="402" width="89" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="TWEET">
+                                    <color key="titleColor" red="0.62794349400000005" green="0.916219055" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitterBt" destination="ZFj-RZ-i08" eventType="touchUpInside" id="HG8-86-aPZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.59607843137254901" green="0.62352941176470589" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -252,6 +291,8 @@
     <resources>
         <image name="cabe1.png" width="640" height="1136"/>
         <image name="cut-button-4183464.png" width="400" height="385"/>
+        <image name="hotyo.png" width="400" height="400"/>
+        <image name="manaita.png" width="477" height="804"/>
         <image name="photo.jpg" width="250" height="250"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -8,6 +8,7 @@
 
 #import "FreeScoreViewController.h"
 #import "ViewController.h"
+#import <Social/Social.h>
 
 @interface FreeScoreViewController ()
 
@@ -19,7 +20,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self loadAdMobInterstitial];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self loadAdMobInterstitial];
+
+    });
+    
     
     scoreLabel.text = [NSString stringWithFormat:@"%d",scorenumber];
 }
@@ -45,39 +50,28 @@
 }
 
 // Twitter
-- (IBAction)postTwitter:(id)sender {
-    NSString* postContent = [NSString stringWithFormat:@"「%@」", _entry.title];
-    NSURL* appURL = [NSURL URLWithString:_entry.link];
-    // =========== iOSバージョンで、処理を分岐 ============
-    // iOS Version
-    NSString *iosVersion = [[[UIDevice currentDevice] systemVersion] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    // Social.frameworkを使う
-    if ([iosVersion floatValue] >= 6.0) {
-        SLComposeViewController *twitterPostVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [twitterPostVC setInitialText:postContent];
-        [twitterPostVC addURL:appURL]; // アプリURL
-        [self presentViewController:twitterPostVC animated:YES completion:nil];
+-(IBAction)twitterBt{
+    CGRect rect = [[UIScreen mainScreen] bounds];
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGContextFillRect(ctx, rect);
+    [self.view.layer renderInContext:ctx];
+    NSData *data = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
+    UIImage *capture = [UIImage imageWithData:data];
+    UIGraphicsEndImageContext();
+    
+    
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]){
+        SLComposeViewController* tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [tweetSheet setInitialText:@"text"];
+        [tweetSheet addImage:capture];
+        [tweetSheet addURL:[NSURL URLWithString:@"http://qiita.com/WizowozY"]];
+        [self presentViewController:tweetSheet animated:YES completion:nil];
     }
-    // Twitter.frameworkを使う
-    else if ([iosVersion floatValue] >= 5.0) {
-        // Twitter画面を保持するViewControllerを作成する。
-        TWTweetComposeViewController *twitter = [[TWTweetComposeViewController alloc] init];
-        // 初期表示する文字列を指定する。
-        [twitter setInitialText:postContent];
-        // TweetにURLを追加することが出来ます。
-        [twitter addURL:appURL];
-        // Tweet後のコールバック処理を記述します。
-        // ブロックでの記載となり、引数にTweet結果が渡されます。
-        twitter.completionHandler = ^(TWTweetComposeViewControllerResult res) {
-            if (res == TWTweetComposeViewControllerResultDone)
-                NSLog(@"tweet done.");
-            else if (res == TWTweetComposeViewControllerResultCancelled)
-                NSLog(@"tweet canceled.");
-        };
-        // Tweet画面を表示します。
-        [self presentModalViewController:twitter animated:YES];
-    }
+
 }
+
+
 
 
 @end

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CBAE722AC882FD0893858B46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B3CB2E263E2273978DA86 /* libPods.a */; };
+		CE3F25091AC236CE00030BCF /* SengiriCabe.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3F25081AC236CE00030BCF /* SengiriCabe.png */; };
+		CE3F250B1AC237B400030BCF /* hotyo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3F250A1AC237B400030BCF /* hotyo.png */; };
+		CE3F250D1AC256AE00030BCF /* manaita.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3F250C1AC256AE00030BCF /* manaita.png */; };
 		CE63654F1ABFE44800F75599 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE63654D1ABFE44800F75599 /* MenuViewController.m */; };
 		CE6365531ABFE88500F75599 /* BassaBassaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6365521ABFE88500F75599 /* BassaBassaViewController.m */; };
 		CE6C74471AC107C300014535 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C74461AC107C300014535 /* Twitter.framework */; };
@@ -58,6 +61,9 @@
 		B26E3D27AFAB05891B7049E4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B59B3CB2E263E2273978DA86 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8275B6B7BCC0D49B757425D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CE3F25081AC236CE00030BCF /* SengiriCabe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SengiriCabe.png; sourceTree = "<group>"; };
+		CE3F250A1AC237B400030BCF /* hotyo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotyo.png; sourceTree = "<group>"; };
+		CE3F250C1AC256AE00030BCF /* manaita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = manaita.png; sourceTree = "<group>"; };
 		CE63654C1ABFE44800F75599 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		CE63654D1ABFE44800F75599 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		CE6365511ABFE88500F75599 /* BassaBassaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BassaBassaViewController.h; sourceTree = "<group>"; };
@@ -160,6 +166,9 @@
 				D6F60FF61A45565D00B4B780 /* katana.mp3 */,
 				D69241A01A4566FC009A3960 /* photo.jpg */,
 				D69241A21A45957B009A3960 /* cut-button-4183464.png */,
+				CE3F25081AC236CE00030BCF /* SengiriCabe.png */,
+				CE3F250A1AC237B400030BCF /* hotyo.png */,
+				CE3F250C1AC256AE00030BCF /* manaita.png */,
 				48E3B37A1DB2395195320AC2 /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -321,8 +330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D60BC9DA1A1760F100F59BFE /* Images.xcassets in Resources */,
+				CE3F250B1AC237B400030BCF /* hotyo.png in Resources */,
 				D684C4581A20758300949818 /* cabe5.png in Resources */,
 				D69241A11A4566FC009A3960 /* photo.jpg in Resources */,
+				CE3F25091AC236CE00030BCF /* SengiriCabe.png in Resources */,
 				D684C4551A20758300949818 /* cabe2.png in Resources */,
 				D684C45C1A20758300949818 /* cabe10.png in Resources */,
 				D684C4571A20758300949818 /* cabe4.png in Resources */,
@@ -334,6 +345,7 @@
 				D684C4561A20758300949818 /* cabe3.png in Resources */,
 				D684C45A1A20758300949818 /* cabe8.png in Resources */,
 				D60BC9D51A1760F100F59BFE /* Main.storyboard in Resources */,
+				CE3F250D1AC256AE00030BCF /* manaita.png in Resources */,
 				D6F60FF71A45565D00B4B780 /* katana.mp3 in Resources */,
 				D684C4601A207ABC00949818 /* cabe6.png in Resources */,
 			);

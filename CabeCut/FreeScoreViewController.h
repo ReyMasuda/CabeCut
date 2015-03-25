@@ -20,4 +20,6 @@
     GADInterstitial *interstitial_;
 }
 
+-(IBAction)twitterBt;
+
 @end
