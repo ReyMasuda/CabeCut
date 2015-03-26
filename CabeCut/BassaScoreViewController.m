@@ -55,7 +55,7 @@
         SLComposeViewController* tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
         [tweetSheet setInitialText:@"text"];
 //        [tweetSheet addImage:postImage];
-        [tweetSheet addURL:[NSURL URLWithString:@"http://qiita.com/WizowozY"]];
+        [tweetSheet addURL:[NSURL URLWithString:@""]];
         [self presentViewController:tweetSheet animated:YES completion:nil];
     }
     CGRect rect = [[UIScreen mainScreen] bounds];

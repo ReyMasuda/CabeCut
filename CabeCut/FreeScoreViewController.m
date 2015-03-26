@@ -65,7 +65,7 @@
         SLComposeViewController* tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
         [tweetSheet setInitialText:@"text"];
         [tweetSheet addImage:capture];
-        [tweetSheet addURL:[NSURL URLWithString:@"http://qiita.com/WizowozY"]];
+        [tweetSheet addURL:[NSURL URLWithString:@""]];
         [self presentViewController:tweetSheet animated:YES completion:nil];
     }
 

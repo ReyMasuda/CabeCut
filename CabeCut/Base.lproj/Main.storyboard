@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.98196500075887749" blue="0.95889395407656963" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQx-U9-mdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -95,8 +95,11 @@
                                     <action selector="menuBt" destination="vXZ-lx-hvc" eventType="touchUpInside" id="a82-US-amM"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="manaita.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pk5-W1-5YJ">
+                                <rect key="frame" x="22" y="182" width="276" height="164"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.71201959873382215" green="0.71925951086956519" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.98196500075887749" blue="0.95889395407656963" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
@@ -137,7 +140,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.6588235294117647" green="0.67450980392156867" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.98196500075887749" blue="0.95889395407656963" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="17m-3k-405"/>
                     <connections>
@@ -209,7 +212,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.6588235294117647" green="0.67450980392156867" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.98196500075887749" blue="0.95889395407656963" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="cabeView" destination="AIC-sH-hU0" id="Epe-gI-wUH"/>
@@ -234,16 +237,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v1-nn-pdV">
-                                <rect key="frame" x="259" y="36" width="45" height="30"/>
-                                <state key="normal" title="MENU">
-                                    <color key="titleColor" red="0.62794349400000005" green="0.916219055" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="menuBt" destination="ujD-0t-4YS" eventType="touchUpInside" id="fy4-Gx-MLr"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFF-cB-iYq">
                                 <rect key="frame" x="94" y="112" width="132" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
@@ -274,7 +267,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.59607843137254901" green="0.62352941176470589" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.98196500075887749" blue="0.95889395407656963" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="scoreLabel" destination="PFF-cB-iYq" id="kxi-Ew-VvU"/>
@@ -288,6 +281,7 @@
     <resources>
         <image name="cabe1.png" width="640" height="1136"/>
         <image name="hotyo.png" width="400" height="400"/>
+        <image name="manaita.png" width="477" height="804"/>
         <image name="photo.jpg" width="250" height="250"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
