@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self loadAdMobInterstitial];
 
     });
@@ -68,7 +68,6 @@
         [tweetSheet addURL:[NSURL URLWithString:@""]];
         [self presentViewController:tweetSheet animated:YES completion:nil];
     }
-
 }
 
 

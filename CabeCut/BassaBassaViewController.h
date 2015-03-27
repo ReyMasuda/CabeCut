@@ -23,6 +23,5 @@
 -(IBAction)cabeButton;
 -(IBAction)ReloadButton;
 -(IBAction)menuBt;
--(IBAction)scoreBt;
 
 @end

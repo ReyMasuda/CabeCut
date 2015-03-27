@@ -17,22 +17,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDg-0f-1hl">
-                                <rect key="frame" x="115" y="391" width="90" height="30"/>
-                                <state key="normal" title="バッサバッサ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CabeCut.png" translatesAutoresizingMaskIntoConstraints="NO" id="8hJ-0G-ZfR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLP-jR-RQh">
+                                <rect key="frame" x="68" y="436" width="184" height="40"/>
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ujD-0t-4YS" kind="modal" id="JWI-ly-5CF"/>
+                                    <segue destination="ujD-0t-4YS" kind="modal" id="13p-Gy-c8F"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1o-za-LUl">
-                                <rect key="frame" x="145" y="453" width="30" height="30"/>
-                                <state key="normal" title="時間">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h54-nO-FQk">
+                                <rect key="frame" x="124" y="490" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPz-aX-jLb">
+                                <rect key="frame" x="85" y="495" width="151" height="39"/>
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="FHK-9S-KLx"/>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="zit-Fy-y5H"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,8 +64,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cabe1.png" translatesAutoresizingMaskIntoConstraints="NO" id="08o-ri-ciQ">
-                                <rect key="frame" x="40" y="83" width="240" height="401"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUU-PJ-nzy">
+                                <rect key="frame" x="9" y="483" width="47" height="47"/>
+                                <state key="normal" title="Reload" image="photo.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ReloadButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8nv-e4-djV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="manaita.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pk5-W1-5YJ">
+                                <rect key="frame" x="-26" y="155" width="363" height="243"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZT-Ms-r28">
                                 <rect key="frame" x="135" y="83" width="50" height="44"/>
@@ -72,12 +90,6 @@
                                 <connections>
                                     <action selector="cabeButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NI7-FF-s08"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUU-PJ-nzy">
-                                <rect key="frame" x="9" y="483" width="47" height="47"/>
-                                <state key="normal" title="Reload" image="photo.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mJ-EJ-A6J">
                                 <rect key="frame" x="126" y="36" width="69" height="39"/>
@@ -95,8 +107,8 @@
                                     <action selector="menuBt" destination="vXZ-lx-hvc" eventType="touchUpInside" id="a82-US-amM"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="manaita.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pk5-W1-5YJ">
-                                <rect key="frame" x="22" y="182" width="276" height="164"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cabe1.png" translatesAutoresizingMaskIntoConstraints="NO" id="08o-ri-ciQ">
+                                <rect key="frame" x="-3" y="32" width="327" height="536"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98196500075887749" blue="0.95889395407656963" alpha="1" colorSpace="calibratedRGB"/>
@@ -106,7 +118,7 @@
                         <outlet property="cabeView" destination="08o-ri-ciQ" id="3bS-0o-6i1"/>
                         <outlet property="hiddenbt" destination="6Qu-kD-Ff7" id="dBg-yN-2xb"/>
                         <outlet property="label" destination="NZT-Ms-r28" id="le3-KA-tMC"/>
-                        <outlet property="reloadbt" destination="IUU-PJ-nzy" id="bSi-K6-QdG"/>
+                        <outlet property="reloadbt" destination="IUU-PJ-nzy" id="a7D-Jf-hVh"/>
                         <outlet property="timeLabel" destination="0mJ-EJ-A6J" id="ZH4-IC-RKk"/>
                         <segue destination="wAn-xe-GSz" kind="modal" identifier="toScore" id="Ums-as-ieI"/>
                     </connections>
@@ -133,11 +145,27 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yo-E8-kck">
-                                <rect key="frame" x="258" y="35" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLl-bH-SFs">
+                                <rect key="frame" x="119" y="350" width="75" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="MENU">
+                                    <color key="titleColor" red="0.62794349400000005" green="0.916219055" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="xxR-mc-gcC" kind="modal" id="Ha3-Ef-xgV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWy-71-oLj">
+                                <rect key="frame" x="112" y="426" width="89" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="TWEET">
+                                    <color key="titleColor" red="0.62794349400000005" green="0.916219055" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitterBt" destination="wAn-xe-GSz" eventType="touchUpInside" id="eua-b5-Zy0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98196500075887749" blue="0.95889395407656963" alpha="1" colorSpace="calibratedRGB"/>
@@ -149,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hbu-Rr-K9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5" y="-309"/>
+            <point key="canvasLocation" x="-5" y="-277"/>
         </scene>
         <!--Bassa Bassa View Controller-->
         <scene sceneID="Pd5-UL-eXm">
@@ -180,7 +208,6 @@
                                 </state>
                                 <connections>
                                     <action selector="ReloadButton" destination="ujD-0t-4YS" eventType="touchUpInside" id="cGA-wr-9hP"/>
-                                    <action selector="ReloadButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tHJ-S3-W8u"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cabe1.png" translatesAutoresizingMaskIntoConstraints="NO" id="AIC-sH-hU0">
@@ -252,7 +279,7 @@
                                 </state>
                                 <connections>
                                     <action selector="menuBt" destination="ujD-0t-4YS" eventType="touchUpInside" id="5jF-iV-svS"/>
-                                    <segue destination="xxR-mc-gcC" kind="modal" id="voF-8F-hCz"/>
+                                    <segue destination="xxR-mc-gcC" kind="modal" id="Bkv-Cq-d8w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0e-0U-0yZ">
@@ -263,7 +290,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="twitterBt" destination="ZFj-RZ-i08" eventType="touchUpInside" id="HG8-86-aPZ"/>
+                                    <action selector="twitterBt" destination="ZFj-RZ-i08" eventType="touchUpInside" id="7FY-IK-qLt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -279,6 +306,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CabeCut.png" width="414" height="736"/>
         <image name="cabe1.png" width="640" height="1136"/>
         <image name="hotyo.png" width="400" height="400"/>
         <image name="manaita.png" width="477" height="804"/>
@@ -289,4 +317,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ha3-Ef-xgV"/>
+    </inferredMetricsTieBreakers>
 </document>

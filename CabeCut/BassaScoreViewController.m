@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view.
     
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self loadAdMobInterstitial];
     });
     
@@ -50,14 +50,7 @@
 }
 
 // Twitter
--(void)postToTwitter{
-    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]){
-        SLComposeViewController* tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweetSheet setInitialText:@"text"];
-//        [tweetSheet addImage:postImage];
-        [tweetSheet addURL:[NSURL URLWithString:@""]];
-        [self presentViewController:tweetSheet animated:YES completion:nil];
-    }
+-(IBAction)twitterBt{
     CGRect rect = [[UIScreen mainScreen] bounds];
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
@@ -66,6 +59,14 @@
     NSData *data = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
     UIImage *capture = [UIImage imageWithData:data];
     UIGraphicsEndImageContext();
+    
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]){
+        SLComposeViewController* tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [tweetSheet setInitialText:@"text"];
+        [tweetSheet addImage:capture];
+        [tweetSheet addURL:[NSURL URLWithString:@""]];
+        [self presentViewController:tweetSheet animated:YES completion:nil];
+    }
 }
 
 
