@@ -33,11 +33,6 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"katana" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:path];
     AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(url), &sound_1);
-    
-    label.font = [UIFont fontWithName:@"HoboStd" size:35];
-    timeLabel.font = [UIFont fontWithName:@"HoboStd" size:25];
-    
-
 }
 
 -(IBAction)cabeButton{
@@ -86,6 +81,5 @@
 -(IBAction)menuBt{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
 
 @end
