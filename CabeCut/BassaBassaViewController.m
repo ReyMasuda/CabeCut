@@ -19,6 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    label.font = [UIFont fontWithName:@"HoboStd" size:60.0];
+    
     number = 10;
     cut = 1;
     reloadbt.hidden = YES;

@@ -18,6 +18,7 @@
 		CE6C74491AC107D000014535 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C74481AC107D000014535 /* Social.framework */; };
 		CEA7EC271AC00A7B00CB1140 /* BassaScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7EC261AC00A7B00CB1140 /* BassaScoreViewController.m */; };
 		CEA7EC2A1AC00AA000CB1140 /* FreeScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7EC291AC00AA000CB1140 /* FreeScoreViewController.m */; };
+		CECC20381ACCC8DD00700F24 /* HoboStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE26951B1AC6AE74006AADCB /* HoboStd.otf */; };
 		D60BC9C21A1760F100F59BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60BC9C11A1760F100F59BFE /* Foundation.framework */; };
 		D60BC9C41A1760F100F59BFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60BC9C31A1760F100F59BFE /* CoreGraphics.framework */; };
 		D60BC9C61A1760F100F59BFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60BC9C51A1760F100F59BFE /* UIKit.framework */; };
@@ -334,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECC20381ACCC8DD00700F24 /* HoboStd.otf in Resources */,
 				D60BC9DA1A1760F100F59BFE /* Images.xcassets in Resources */,
 				CE621BCB1AC3D1870027CA47 /* CabeCut.png in Resources */,
 				CE3F250B1AC237B400030BCF /* hotyo.png in Resources */,
