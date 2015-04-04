@@ -69,5 +69,10 @@
     }
 }
 
+-(IBAction)menuBt{
+    scorenumber = 0;
+    number = 0;
+}
+
 
 @end

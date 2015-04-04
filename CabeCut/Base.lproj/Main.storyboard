@@ -170,6 +170,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="menuBt" destination="wAn-xe-GSz" eventType="touchUpInside" id="zZP-Nb-gxQ"/>
                                     <segue destination="xxR-mc-gcC" kind="modal" id="Ha3-Ef-xgV"/>
                                 </connections>
                             </button>
@@ -301,6 +302,7 @@
                                 </state>
                                 <connections>
                                     <action selector="menuBt" destination="ujD-0t-4YS" eventType="touchUpInside" id="5jF-iV-svS"/>
+                                    <action selector="menuBt" destination="ZFj-RZ-i08" eventType="touchUpInside" id="rba-7X-Ty1"/>
                                     <segue destination="xxR-mc-gcC" kind="modal" id="Bkv-Cq-d8w"/>
                                 </connections>
                             </button>
@@ -353,6 +355,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Ha3-Ef-xgV"/>
+        <segue reference="Bkv-Cq-d8w"/>
     </inferredMetricsTieBreakers>
 </document>

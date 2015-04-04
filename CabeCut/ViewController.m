@@ -19,7 +19,7 @@
     [super viewDidLoad];
     label.font = [UIFont fontWithName:@"HoboStd" size:60.0];
     timeLabel.font = [UIFont fontWithName:@"HoboStd" size:25.0];
-    time = 5.0;
+    time = 60.0;
     timeLabel.text = [NSString stringWithFormat:@"%.2f",time];
     timer = [NSTimer scheduledTimerWithTimeInterval:0.01
                                              target:self
