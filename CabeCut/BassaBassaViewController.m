@@ -38,6 +38,9 @@
 
 -(IBAction)menuBt{
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+    scorenumber = 0;
+    number = 0;
 }
 
 -(IBAction)cabeButton{

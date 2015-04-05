@@ -19,7 +19,7 @@
     [super viewDidLoad];
     label.font = [UIFont fontWithName:@"HoboStd" size:60.0];
     timeLabel.font = [UIFont fontWithName:@"HoboStd" size:25.0];
-    time = 60.0;
+    time = 30.0;
     timeLabel.text = [NSString stringWithFormat:@"%.2f",time];
     timer = [NSTimer scheduledTimerWithTimeInterval:0.01
                                              target:self
@@ -82,6 +82,9 @@
 
 -(IBAction)menuBt{
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+    scorenumber = 0;
+    number = 0;
 }
 
 @end
