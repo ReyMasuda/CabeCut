@@ -62,7 +62,7 @@
     
     if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]){
         SLComposeViewController* tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweetSheet setInitialText:[NSString stringWithFormat:@"CabeCutで%dCuTしました!!!",scorenumber]];
+        [tweetSheet setInitialText:[NSString stringWithFormat:@"CabeCutで%dCuTしました!!! あなたもCuTしませんか？？",scorenumber]];
         [tweetSheet addImage:capture];
         [tweetSheet addURL:[NSURL URLWithString:@""]];
         [self presentViewController:tweetSheet animated:YES completion:nil];
