@@ -49,7 +49,6 @@
     NSLog(@"interstitial erorr");
 }
 
-// Twitter
 -(IBAction)twitterBt{
     CGRect rect = [[UIScreen mainScreen] bounds];
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
