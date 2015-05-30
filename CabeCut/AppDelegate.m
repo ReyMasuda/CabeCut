@@ -7,13 +7,26 @@
 //
 
 #import "AppDelegate.h"
+#import "GAI.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // Google Analyticsの初期化
+    [self initializeGoogleAnalytics];
+    
     return YES;
+}
+
+- (void)initializeGoogleAnalytics
+{
+    // トラッキングIDを設定
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-63567768-1"];
+    
+    // 例外を Google Analytics に送る
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

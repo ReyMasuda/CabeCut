@@ -44,6 +44,7 @@
 }
 
 -(IBAction)cabeButton{
+
     number=number -1;
     cut = cut+1;
     label.text = [NSString stringWithFormat:@"%d",number];
@@ -73,5 +74,45 @@
     }
 }
 
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+// シェイク開始
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if(number > 0){
+    
+    if (event.type == UIEventTypeMotion && event.subtype == UIEventSubtypeMotionShake)  {
+        NSLog(@"Motion began");
+    }
+    number=number -1;
+    cut = cut+1;
+    label.text = [NSString stringWithFormat:@"%d",number];
+    NSString *imagePath =[NSString stringWithFormat:@"cabe%d.png",cut];
+    cabeView.image=[UIImage imageNamed:imagePath];
+    if (number ==0) {
+        hiddenbt.hidden = YES;
+    }
+    
+    if (number == 0) {
+        reloadbt.hidden = NO;
+    }
+    
+    AudioServicesPlaySystemSound(sound_1);
+    
+    scorenumber=scorenumber +1;
+    }else{
+        
+    }
+}
+
+// シェイク完了
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (event.type == UIEventTypeMotion && event.subtype == UIEventSubtypeMotionShake) {
+        NSLog(@"Motion ended");
+    }
+}
 
 @end

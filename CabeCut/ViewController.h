@@ -13,6 +13,7 @@ int scoretweet;
 
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import <CoreMotion/CoreMotion.h>
 
 @interface ViewController : UIViewController{
     int number;
@@ -27,6 +28,8 @@ int scoretweet;
     IBOutlet UILabel *timeLabel;
 
 }
+
+@property (nonatomic,retain) CMMotionManager *motionManager;
 
 -(IBAction)cabeButton;
 -(IBAction)ReloadButton;
