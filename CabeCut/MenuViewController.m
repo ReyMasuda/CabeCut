@@ -7,7 +7,9 @@
 //
 
 #import "MenuViewController.h"
-#import "TrackingManager.h"
+#import "GAIDictionaryBuilder.h"
+#import "GAI.h"
+
 
 @interface MenuViewController ()
 
@@ -18,21 +20,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    
-    // "トップ画面"が開かれたときのトラッキング情報を送る
-    [TrackingManager sendGoogleAnalyticsTracking:@"トップ画面"];
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.screenName = @"トップ画面";
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buttonPushed:(id)sender {
-    
-    [TrackingManager sendEventTracking:@"Button" action:@"Push" label:@"お気に入り" value:nil screen:@"トップ画面"];
+- (IBAction)bassaPushed:(id)sender {
+    [self sendToGoogleAnalytics:@"BassaBassa"];
+    [self performSegueWithIdentifier:@"BassaBassa" sender:nil];
 }
+
+- (IBAction)timePushed:(id)sender {
+    [self sendToGoogleAnalytics:@"TimeTrial"];
+    [self performSegueWithIdentifier:@"TimeTrial" sender:nil];
+}
+
+- (void)sendToGoogleAnalytics:(NSString *)label {
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker send:[[GAIDictionaryBuilder
+                    createEventWithCategory:@"イベント発生！"
+                    action:@"ボタンが押されました。"
+                    label:label
+                    value:nil] build]];
+}
+
     
     
 @end

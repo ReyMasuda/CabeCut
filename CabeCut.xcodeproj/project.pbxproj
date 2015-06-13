@@ -16,8 +16,12 @@
 		CE6365531ABFE88500F75599 /* BassaBassaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6365521ABFE88500F75599 /* BassaBassaViewController.m */; };
 		CE6C74471AC107C300014535 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C74461AC107C300014535 /* Twitter.framework */; };
 		CE6C74491AC107D000014535 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C74481AC107D000014535 /* Social.framework */; };
-		CE81D7DD1B19BD9600F05D9F /* TrackingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81D7DC1B19BD9600F05D9F /* TrackingManager.m */; };
 		CE81D7DF1B19BFCE00F05D9F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE81D7DE1B19BFCE00F05D9F /* CoreMotion.framework */; };
+		CE81D7E11B19D78A00F05D9F /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE81D7E01B19D78A00F05D9F /* AdSupport.framework */; };
+		CE81D7E31B19D84F00F05D9F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE81D7E21B19D84F00F05D9F /* CoreData.framework */; };
+		CE81D7E51B19D85700F05D9F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE81D7E41B19D85700F05D9F /* SystemConfiguration.framework */; };
+		CE81D7E71B19D86700F05D9F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE81D7E61B19D86700F05D9F /* libz.dylib */; };
+		CE81D7E91B19D89600F05D9F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE81D7E81B19D89600F05D9F /* libsqlite3.0.dylib */; };
 		CEA7EC271AC00A7B00CB1140 /* BassaScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7EC261AC00A7B00CB1140 /* BassaScoreViewController.m */; };
 		CEA7EC2A1AC00AA000CB1140 /* FreeScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7EC291AC00AA000CB1140 /* FreeScoreViewController.m */; };
 		CECC20381ACCC8DD00700F24 /* HoboStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE26951B1AC6AE74006AADCB /* HoboStd.otf */; };
@@ -76,9 +80,12 @@
 		CE6365521ABFE88500F75599 /* BassaBassaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BassaBassaViewController.m; sourceTree = "<group>"; };
 		CE6C74461AC107C300014535 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		CE6C74481AC107D000014535 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		CE81D7DB1B19BD9600F05D9F /* TrackingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingManager.h; sourceTree = "<group>"; };
-		CE81D7DC1B19BD9600F05D9F /* TrackingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingManager.m; sourceTree = "<group>"; };
 		CE81D7DE1B19BFCE00F05D9F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		CE81D7E01B19D78A00F05D9F /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		CE81D7E21B19D84F00F05D9F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE81D7E41B19D85700F05D9F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CE81D7E61B19D86700F05D9F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CE81D7E81B19D89600F05D9F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		CEA7EC251AC00A7B00CB1140 /* BassaScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BassaScoreViewController.h; sourceTree = "<group>"; };
 		CEA7EC261AC00A7B00CB1140 /* BassaScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BassaScoreViewController.m; sourceTree = "<group>"; };
 		CEA7EC281AC00AA000CB1140 /* FreeScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeScoreViewController.h; sourceTree = "<group>"; };
@@ -123,6 +130,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE81D7E91B19D89600F05D9F /* libsqlite3.0.dylib in Frameworks */,
+				CE81D7E71B19D86700F05D9F /* libz.dylib in Frameworks */,
+				CE81D7E51B19D85700F05D9F /* SystemConfiguration.framework in Frameworks */,
+				CE81D7E31B19D84F00F05D9F /* CoreData.framework in Frameworks */,
+				CE81D7E11B19D78A00F05D9F /* AdSupport.framework in Frameworks */,
 				CE81D7DF1B19BFCE00F05D9F /* CoreMotion.framework in Frameworks */,
 				CE6C74491AC107D000014535 /* Social.framework in Frameworks */,
 				CE6C74471AC107C300014535 /* Twitter.framework in Frameworks */,
@@ -197,6 +209,11 @@
 		D60BC9C01A1760F100F59BFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE81D7E81B19D89600F05D9F /* libsqlite3.0.dylib */,
+				CE81D7E61B19D86700F05D9F /* libz.dylib */,
+				CE81D7E41B19D85700F05D9F /* SystemConfiguration.framework */,
+				CE81D7E21B19D84F00F05D9F /* CoreData.framework */,
+				CE81D7E01B19D78A00F05D9F /* AdSupport.framework */,
 				CE81D7DE1B19BFCE00F05D9F /* CoreMotion.framework */,
 				CE6C74481AC107D000014535 /* Social.framework */,
 				CE6C74461AC107C300014535 /* Twitter.framework */,
@@ -225,8 +242,6 @@
 				CEA7EC261AC00A7B00CB1140 /* BassaScoreViewController.m */,
 				CEA7EC281AC00AA000CB1140 /* FreeScoreViewController.h */,
 				CEA7EC291AC00AA000CB1140 /* FreeScoreViewController.m */,
-				CE81D7DB1B19BD9600F05D9F /* TrackingManager.h */,
-				CE81D7DC1B19BD9600F05D9F /* TrackingManager.m */,
 				D60BC9D31A1760F100F59BFE /* Main.storyboard */,
 				D60BC9D91A1760F100F59BFE /* Images.xcassets */,
 				D60BC9C81A1760F100F59BFE /* Supporting Files */,
@@ -423,7 +438,6 @@
 				CEA7EC2A1AC00AA000CB1140 /* FreeScoreViewController.m in Sources */,
 				CEA7EC271AC00A7B00CB1140 /* BassaScoreViewController.m in Sources */,
 				CE63654F1ABFE44800F75599 /* MenuViewController.m in Sources */,
-				CE81D7DD1B19BD9600F05D9F /* TrackingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

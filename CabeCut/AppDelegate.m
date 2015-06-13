@@ -13,21 +13,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Google Analyticsの初期化
-    [self initializeGoogleAnalytics];
+    [GAI sharedInstance].trackUncaughtExceptions = YES;// Optional: set Google Analytics dispatch interval
+    [GAI sharedInstance].dispatchInterval = 20;
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-63567768-1"];
     
     return YES;
 }
 
-- (void)initializeGoogleAnalytics
-{
-    // トラッキングIDを設定
-    [[GAI sharedInstance] trackerWithTrackingId:@"UA-63567768-1"];
-    
-    // 例外を Google Analytics に送る
-    [GAI sharedInstance].trackUncaughtExceptions = YES;
-    
-}
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
